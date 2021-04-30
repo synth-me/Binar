@@ -1,0 +1,81 @@
+<html>
+    <head>
+<style>
+
+#body {
+  background-color: #191414;
+}
+
+#all {
+  text-align: center;
+  font:25px/30px  "Helvetica", "Arial", sans-serif;
+  margin-top: 10% ;
+}
+
+#title {
+  color : #FFFFFF;
+  font-size: 35px;
+  text-align: center;
+}
+
+input {
+  color: #FFFFFF;
+  background-color: #616161;
+  font:25px/30px  "Helvetica", "Arial", sans-serif;
+}
+
+button {
+  background-color: #616161;
+  border-radius: 5px;
+}
+
+#pm {
+  color: #FFFFFF;
+  font:25px/30px  "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#img_id {
+  width:150px;
+  height:100px;
+}
+
+#check[src=""] {
+  display : none;
+}
+
+#b_div {
+  margin-left: 1%;
+}
+
+#z, #u {
+  border-radius: 5px;
+  background-color:lime;
+  width:10%;
+}
+
+</style>
+
+    </head>
+
+<body id='body'>
+    <div id='all'>
+        <img id='img_id' src="{{ url_for('static', filename='locker-unscreen.gif')}}"></img>
+        <h1 id='title'>New Password</h1>
+        <input id='senha'>
+        <button id='send'>Register</button>
+
+        <div id="b_div">
+        <button id='z'>0</button>
+        <button id='u'>1</button>
+        </div>
+
+        <p id='pm'></p>
+        <img id='check'>
+        <script src="{{ url_for('static', filename='work.js') }}" type='text/javascript'></script>
+    </div>
+</body>
+
+
+</html>
